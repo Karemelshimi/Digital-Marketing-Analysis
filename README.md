@@ -1,6 +1,6 @@
  <h1 align="center"> Digital Marketing Analysis</h1>
 
-## **Busines Task**
+# **Busines Task**
 Analyze marketing campaigns data based on various digital marketing metrics KPI's to measure the effectiveness of the campaigns and define the best campaign based on the outcomes.
 
 ## Data Summary
@@ -51,7 +51,15 @@ I then i added 2 pivot tables i created 11 calculated fields in them:
 - CPL (Cost Per Lead) = mark_spent/leads 
 - LCR (Lead Conversion Rate) = orders/leads 
 - CCR (Click Conversion Rate) = orders/clicks 
-- ICR (Impression Conversion Rate) = orders/impressions 
+- ICR (Impression Conversion Rate) = orders/impressions
+
+# Share
+### Dashboard
+I made an interactive dashboard that show a summary of the data, it has filters that changes the data displayed, there are 2 filters, one for campaigns and the other one is for the category. It toggles betwen the calculated values to quickly see the values of each campaign and category to better understand the campaigns and their outcomes, as  well as has 2 tables  displayed that summarize the results of the advertising campaigns like the spending, revenues, clicks, impressions, orders, and leads. <br/>
+The dashboard also has a graph that shows the regression chart for the marke_spent vs orders where the independent variable is the spending of the campaign and the dependent variable is the orders, it has 2 filters as will one for campaigns and the other one is for the category. it helps you understand when the spending on the campaign increases does the number of orders as well increase or not, and by what percentage. The Y equation and the R squared value are displayed on the chart.
+
+![Screenshot (172)](https://github.com/Karemelshimi/Digital-Marketing-Analysis/assets/153403784/91a2a4b2-60dc-4439-a8e3-826ce9971e13)
+You can check the full dashboard video of how it interacts [here](https://drive.google.com/file/d/1ATuMiLleMGvG9I1Rk-Ay8FP4pXUJ5alB/view?usp=sharing), or check the dashboard in the provided excel sheet of the full analysis.
 
 ## **Statistical Summary Outcomes**
 - Highest total_spending was $5,026,675 by banner_partner and the lowest total_spending facebook_lal $2,641,939 <br/>
