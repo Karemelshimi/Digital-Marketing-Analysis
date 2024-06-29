@@ -1,13 +1,14 @@
  <h1 align="center"> Digital Marketing Analysis</h1>
 
 # **Busines Task**
-Analyze marketing campaigns data based on various digital marketing metrics KPI's to measure the effectiveness of the campaigns and define the best campaign based on the outcomes.
+Analyze marketing campaigns data based on various digital marketing metrics KPIs to measure the effectiveness of the campaigns and define the best campaign based on the outcomes.
 
 ## Data Summary
-I found the data on kaggle [here](https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending) it has no author identified and its licenced as public domain. <br/>
-The data contains historical data about various digital marketing campaigns to check the performance of each campaign and finding out whats working best. <br/>
+I found the data on Kaggle [here](https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending) it has no author identified and it's licensed as public domain. <br/>
+The data contains historical data about various digital marketing campaigns to check the performance of each campaign and find out what's working best. <br/>
 The date for the campaigns is between 1-28 of February, campaigns were running for 28 days.
 #### The data has 11 columns: <br/>
+- id: unique identifier for each entry<br/>
 - c_date: Date of the campaign <br/>
 - campaign_name: Name of the campaign <br/>
 - category: Category of the campaign (e.g., social, search, influencer, media) <br/>
@@ -18,7 +19,7 @@ The date for the campaigns is between 1-28 of February, campaigns were running f
 - leads: Number of leads generated <br/>
 - orders: Number of orders made <br/>
 - revenue: Revenue generated from the campaign <br/>
-#### There are 11 campaings:
+#### There are 11 campaigns:
 - banner_partner
 - facebook_lal
 - facebook_retargeting
@@ -32,22 +33,22 @@ The date for the campaigns is between 1-28 of February, campaigns were running f
 - instagram_tier2
 - youtube_blogger
 #### There are 4 categories and each campaign belongs to one of the categories:
-- influencer
-- media
-- search
-- social
+- Influencer
+- Media
+- Search
+- Social
 
 # Processing
 I used pivot tables to process the data and get insights from it.<br/>
 The values were then summed and grouped by each campaign to know the sum of each variable and to know the best campaigns.<br/>
-Then i did another pivot table and summed the values and grouped them again but by each category to know the sum of each variable and which category is the most efficient one.<br/>
-I then i added 2 pivot tables i created 11 calculated fields in them:
+Then I did another pivot table and summed the values and grouped them again by each category to know the sum of each variable and which category is the most efficient one.<br/>
+I then added 2 pivot tables and created 11 calculated fields in them:
 - AOV (Average Order Value) = revenue/orders 
 - ROAS (Return on Ad Spend) = revenue/mark_spent 
 - ROAS% (Return on Ad Spend Percentage) = (ROAS- 1) * 100% 
 - CAC (Customer Acquisition Cost) = mark_spent/orders 
 - CPC (Cost Per Click) = mark_spent / Total Number of Clicks 
-- CPM (Cost Per Mile "Thousend Impression") = (mark_spent/impressions) * 1000 
+- CPM (Cost Per Mile "Thousand Impression") = (mark_spent/impressions) * 1000 
 - CPL (Cost Per Lead) = mark_spent/leads 
 - LCR (Lead Conversion Rate) = orders/leads 
 - CCR (Click Conversion Rate) = orders/clicks 
@@ -55,8 +56,8 @@ I then i added 2 pivot tables i created 11 calculated fields in them:
 
 # Share
 ### Dashboard
-I made an interactive dashboard that show a summary of the data, it has filters that changes the data displayed, there are 2 filters, one for campaigns and the other one is for the category. It toggles betwen the calculated values to quickly see the values of each campaign and category to better understand the campaigns and their outcomes, as  well as has 2 tables  displayed that summarize the results of the advertising campaigns like the spending, revenues, clicks, impressions, orders, and leads. <br/>
-The dashboard also has a graph that shows the regression chart for the marke_spent vs orders where the independent variable is the spending of the campaign and the dependent variable is the orders, it has 2 filters as will one for campaigns and the other one is for the category. it helps you understand when the spending on the campaign increases does the number of orders as well increase or not, and by what percentage. The Y equation and the R squared value are displayed on the chart.
+I made an interactive dashboard that shows a summary of the data, it has filters that change the data displayed, there are 2 filters, one for campaigns and the other one is for the category. It toggles between the calculated values to quickly see the values of each campaign and category to understand better the campaigns and their outcomes, as  well as have 2 tables  displayed that summarize the results of the advertising campaigns like the spending, revenues, clicks, impressions, orders, and leads. <br/>
+The dashboard also has a graph that shows the regression chart for the marke_spent vs orders where the independent variable is the spending of the campaign and the dependent variable is the orders, it has 2 filters one for campaigns and the other one for the category. it helps you understand when the spending on the campaign increases, whether the number of orders increases or not, and by what percentage. The Y equation and the R squared value are displayed on the chart.
 
 ![Screenshot (172)](https://github.com/Karemelshimi/Digital-Marketing-Analysis/assets/153403784/91a2a4b2-60dc-4439-a8e3-826ce9971e13)
 You can check the full dashboard video of how it interacts [here](https://drive.google.com/file/d/1ATuMiLleMGvG9I1Rk-Ay8FP4pXUJ5alB/view?usp=sharing), or check the dashboard in the provided excel sheet of the full analysis.
@@ -65,7 +66,7 @@ You can check the full dashboard video of how it interacts [here](https://drive.
 - Highest total_spending was $5,026,675 by banner_partner and the lowest total_spending facebook_lal $2,641,939 <br/>
 - Highest total_order was  1,914  by youtube_blogger and the lowest total_order was 108 by facebook_retargeting <br/>
 - Highest total_revenue was $15,311,433 achieved by youtube_blogger and the lowest was $300,233 by facebook_lal <br/>
-- Highest AOV was 8,000 by youtube_blogger  and the lowest was 2,142 by instagram_tier2 <br/>
+- Highest AOV was 8,000 by youtube_blogger and the lowest was 2,142 by instagram_tier2 <br/>
 - Highest ROAS was $3.77 by youtube_blogger and the lowest was $0.114 by facebook_lal and the highest ROAS % was 277% the lowest ROAS % was -89%  <br/>
 - The highest CPC was $8,986 by facebook_lal and the lowest CPC was $2,120 by youtube_blogger <br/>
 - Instagram_tier2 had the highest total_leads, it was 10,374 and the lowest total_leads was 506 by facebook_retargeting <br/>
